@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page</title>
+</head>
+<body>
+<!--  HEADER LOGO -->    
+    <header>
+        <div class="fixTop" id="myTopnav">
+            <div class="logo">
+                <img src="./images/wwLogo.png" alt="Logo">
+            </div>
+            <ul>
+                <a href="#FirstDiv" class="nav_active">Home</a>
+                <a href="#SecondDiv">Introduction</a>
+                <a href="#ThirdDiv">Learning</a>
+                <a href="#FourthDiv">Link</a>
+                <a href="#FifthDiv">Team</a>
+                <a href="#" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </div>
+    </header>
+<!--  HEADER LOGO --> 
+
+<!-- FIRST CONTENT -->
+<main>
+    <div class="FirstDiv" id="FirstDiv">
+            <div class="leftContent">
+                <h1>Let's <span class="spanLearn">learn</span> together!</h1>
+                <p>
+                    <span class="spanWW">Web Weaver</span> is a group of aspiring web developers who want to share knowledge about web development. We want to allow members to learn from each other, collaborate on projects, and stay updated on the latest trends and technologies in the field.
+                </p>
+            </div>
+
+            <div class="card1">
+                <img src="./images/div1.png" alt="learn">
+            </div>
+    </div>
+    <!-- FIRST CONTENT -->
+
+    <!-- SECOND CONTENT -->
+    <div class="SecondDiv" id="SecondDiv">
+        <div class="rightContent">
+            <h1>What is <span>Web Development?</span></h1>
+            <p>Web development refers to the process of building and maintaining websites or web applications. It encompasses a wide range of tasks, including web design, front-end development, back-end development, and server management.</p>
+        </div>
+        <div class="card1">
+         <img src="./images/div2.png" alt="web development">
+        </div>
+    
+    </div>
+    <!-- SECOND CONTENT -->
+
+
+    <!-- THIRD CONTENT -->
+    <div class="ThirdDiv" id="ThirdDiv">
+        <h2 class="htmlTopic">HTML</h2>
+            <h3 class="htmlMeaning"><i>Hyper Text Mark-up Languange</i></h3>
+            <p class="htmlText"> This is a standard markup language used to create and design web pages. It provides the structure and content of a web page by using a set of predefined elements or tags.</p>
+            <video class="htmlVid" width="320" height="240" controls>
+                <source src="./videos/htmlVid.mp4" type="video/mp4">
+            </video>
+
+        <h2 class="cssTopic">CSS</h2>
+            <video class="cssVid" width="320" height="240" controls>
+                <source src="./videos/cssVid.mp4" type="video/mp4">
+            </video>
+            <h3 class="cssMeaning"><i>Cascading Style Sheets</i></h3>
+            <p class="cssText">It is a style sheet language used to define the presentation and layout of HTML documents. It allows web developers to control the appearance of elements on a web page, including their layout, colors, fonts, and spacing.</p>
+            
+    <h2 class="jscriptTopic">JS</h2>
+            <h3 class="jscriptMeaning"><i>JavaScript</i></h3>
+            <p class="jscriptText">It is a high-level, dynamic programming language primarily used for building interactive and dynamic functionality on websites. It is one of the core technologies of web development, along with HTML and CSS. JavaScript can be executed in web browsers to create dynamic effects, manipulate content on the fly, validate form data, and respond to user actions.</p>
+            <video class="jscriptVid" width="320" height="240" controls>
+                <source src="./videos/jsVid.mp4" type="video/mp4">
+            </video>
+    </div>
+    <!-- THIRD CONTENT -->
+
+    <!-- FOURTH CONTENT -->
+    <div class="FourthDiv" id="FourthDiv">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <a target="_blank" href="https://www.w3schools.com/html/default.asp">
+                    <picture>
+                        <source srcset="./images/carouselhtml.jpg" class="d-block w-100" media="(min-width: 768px)" >
+                        <img src="./images/smallhtml1.jpg" class="d-block w-100" alt="HTML"> 
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="htmlCarousel"></h2>
+                            <button class="btn btn-primary"><a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn More</a></button>
+                        </div>
+                    </picture>
+                </a>
+
+            </div>
+            <div class="carousel-item">
+
+                <a target="_blank" href="https://www.w3schools.com/css/default.asp">
+                    <picture>
+                        <source srcset="./images/carouselcss.jpg" class="d-block w-100" media="(min-width: 768px)" >
+                        <img src="./images/smallcss2.jpg" class="d-block w-100" alt="CSS">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2></h2>
+                            <button class="btn btn-primary"><a href="https://www.w3schools.com/css/default.asp" target="_blank">Learn More</a></button>
+                        </div>
+                    </picture>
+                </a>
+
+            </div>
+            <div class="carousel-item">
+
+                <a target="_blank" href="https://www.w3schools.com/js/default.asp">
+                    <picture>
+                        <source srcset="./images/carouseljs.jpg" class="d-block w-100"  media="(min-width: 768px)" >
+                        <img src="./images/smalljs3.jpg" class="d-block w-100" alt="JS">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2></h2>
+                            <button class="btn btn-primary"><a href="https://www.w3schools.com/js/default.asp" target="_blank">Learn More</a></button>
+                        </div>
+                    </picture>
+                </a>
+
+            </div>
+            <div class="carousel-item">
+
+                <a target="_blank"  href="https://getbootstrap.com/">
+                    <picture>
+                        <source srcset="./images/carouselbs.jpg" class="d-block w-100" media="(min-width: 768px)" >
+                        <img src="./images/smallbs4.jpg" class="d-block w-100" alt="Bootstrap">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2></h2>
+                            <button class="btn btn-primary"><a href="https://getbootstrap.com/" target="_blank">Learn More</a></button>
+                        </div>
+                    </picture>
+                </a>
+
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- FOURTH CONTENT -->
+    
+    <!-- FIFTH CONTENT -->
+    <div class="FifthDiv" id="FifthDiv">
+        <h2>Our <span>team</span></h2>
+        <div class="team-content">
+            <div class="photo-item1">
+                <div class="learner-image">
+                    <img src="./images/Man.jpg" class="learner-photo"/>
+                    <div class="learner-name"><a href="./Rosdy Profile page/portweb2.html" target="_blank" draggable="true">Rosdy Dimaporo</a></div>
+                </div>
+            </div>
+            <div class="photo-item2">
+                <div class="learner-image">
+                    <img src="./images/Girl1.jpg" class="learner-photo"/>
+                    <div class="learner-name"><a href="./Shiela Profile page/shieprofile.html" target="_blank" draggable="true">Shiela Mae Dapilos</a></div>
+                </div>
+            </div>
+            <div class="photo-item3">
+                <div class="learner-image">
+                    <img src="./images/Girl3.jpg" class="learner-photo"/>
+                    <div class="learner-name"><a href="./Marissa Profile page/profile.html" target="_blank" draggable="true">Marissa Nazareth</a></div>
+                </div>
+            </div>
+            <div class="photo-item4">
+                <div class="learner-image">
+                    <img src="./images/Girl2.jpg" class="learner-photo"/>
+                    <div class="learner-name"><a href="./Rica Portfolio Webpage/portfolio.html" target="_blank" draggable="true">Rica Mae Buenavidez</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <!-- FIFTH CONTENT -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrapper">
+        <div class="logo">
+            <h2>Copyright.All Rights Reserved.Web Weaver</h2>
+        </div>
+        <div class="sponsor-image">
+            <div class="image">
+                <img src="./images/accenture.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/pbsp.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/NHT.jpg" alt="">
+            </div>
+        </div>
+            <h3>Supported By:</h3>
+        </div>
+    </footer>
+        <!-- FOOTER -->
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "fixTop") {
+            x.className += " responsive";
+          } else {
+            x.className = "fixTop";
+          }
+        }
+    </script>
+</body>
+</html>
